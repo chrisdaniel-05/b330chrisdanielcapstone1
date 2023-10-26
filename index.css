@@ -1,0 +1,138 @@
+/* CSS Reset Rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caveat", cursive;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: "Playpen Sans", cursive;
+}
+
+/* Navbar Section CSS*/
+.navbar li a {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.navbar li a:hover {
+  color: #818181;
+}
+
+/* Landing Section CSS*/
+
+#landing img {
+  width: 100%;
+}
+
+#landing .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing > .row h4 {
+  font-family: "Gruppo", sans-serif;
+}
+#landing > .row h1 {
+  font-family: "Gruppo", sans-serif;
+}
+
+#landing-icons svg,
+#contact svg {
+  min-width: 25px;
+  min-height: 25px;
+}
+
+/* Project Section CSS */
+#projects {
+  margin-top: 10%;
+  padding: 5% 2rem;
+}
+
+#carousel {
+  border-radius: 15px;
+}
+#carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  font-family: "Playpen Sans", cursive;
+}
+
+/* Tools Section */
+
+#tools .col-md-4 > h3,
+p {
+  font-family: "Gruppo", sans-serif;
+}
+
+#tools p {
+  font-size: 1.4rem;
+}
+.tools-image img {
+  width: 15vw;
+}
+
+/* Contact Section */
+#text-area textarea {
+  height: 100px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  /* Landing Section */
+  #landing > .row h4 {
+    font-size: 18px;
+  }
+
+  #landing-icons svg,
+  #contact svg {
+    min-width: 25px;
+    min-height: 25px;
+  }
+
+  /* Project Section */
+  #projects {
+    padding: 20% 2rem;
+  }
+
+  #tools {
+    padding: 10% 2rem;
+  }
+
+  /* Tools Section */
+  .tools-image img {
+    width: 75%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #projects {
+    padding: 10% 2rem;
+  }
+  #tools .row > .col-md-4 {
+    padding-bottom: 5%;
+  }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+  /* Tools Section */
+  #tools {
+    padding: 8% 2rem;
+  }
+  .tools-image img {
+    width: 60%;
+  }
+
+  #tools .row > .col-md-4 {
+    padding: 0 5% 5%;
+  }
+}
